@@ -158,20 +158,14 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     backgroundColor: const Color.fromARGB(255, 35, 1, 48),
                     shape: const LinearBorder()
                   ),
-                  // style: ButtonStyle(
-                  //   shape: MaterialStateProperty.all<OutlinedBorder>(
-                  //       const LinearBorder()),
-                  //   backgroundColor: MaterialStateProperty.all<Color>(
-                  //     const Color.fromARGB(255, 35, 1, 48),
-                  //   ),
-                  // ),
+
+                  //onpress action
                   onPressed: () {
                     if (formkey.currentState!.validate()) {
                       Navigator.push(
                         context,
                         MaterialPageRoute(builder: (context) {
                           return const HomePage(
-                              // username: fullname.text,
                               );
                         }),
                       );
